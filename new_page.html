@@ -10,30 +10,31 @@
 	<link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-	<div class="container">
+	
 		<header>
 		<nav id='nav'>
+			<a href="index.html"><img src="images/home_alt.png" alt="home page" id="home_image"></a>
 			<ul>
-				<li><a href="index.html">BACK</a></li>
-				<li><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
 				<li><a href="new_page2.html">Page 2</a></li>
 				<li><a href="new_page3.html">Page 3</a></li>
 			</ul>
 		</nav>
 		</header>
+		<div class="container">
 		<section>
 			<!-- layout w/ iframes start-->
 			<div id="line"></div>
 			<div id="c_header"><h1> Capital cities</h1></div>
 			<div id="c_nav">
 				<ul>
-					<li><a href="london.html" target="frame_section">London</a></li>
-					<li><a href="new_york.html" target="frame_section">New York</a></li>
-					<li><a href="tokyo.html" target="frame_section">Tokyo</a></li>
+					<li><a href="iframe/london.html" target="frame_section">London</a></li>
+					<li><a href="iframe/new_york.html" target="frame_section">New York</a></li>
+					<li><a href="iframe/tokyo.html" target="frame_section">Tokyo</a></li>
 				</ul>
 			</div>
 			<div id="c_section">
-				<iframe src="london.html" name="frame_section"></iframe>
+				<iframe src="iframe/london.html" name="frame_section"></iframe>
 			</div>
 			<div id="c_footer">&reg; Iframe layout &reg;</div>
 			<!-- layout w/ iframes end-->

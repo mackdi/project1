@@ -1,39 +1,93 @@
+body {
+	background-image: url("flower.jpg");
+	background-attachment: fixed;
+}
 nav {
-	background-color: #19f;
-	padding: 10px;
+	background-color: #3E93FE;
+	padding:5px;
+	position: fixed;
+	width: 100%;
+	opacity: 0.9;
+	border-bottom: 1px solid black;
+	
+}
+nav ul {
+	display: inline;
+	padding-left: 300px;
+	padding-top: 7px;
+
 }
 nav ul li {
 	display: inline;
-	background-color: #333;
-	padding: 10px;
+	padding: 0px 10px;
+
 }
-nav ul li a  {
-	color: navy;
+nav ul li a:link  {
+	background-color: #f44336;
+	color: white;
+	padding: 10px 35px;
+	font-size: 1.3em;
+	text-decoration: none;
+	opacity: 1;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+nav ul li a:visited  {
+	background-color: #f44336;
+	color: white;
+	padding: 10px 25px;
+	font-size: 1.3em;
+	text-decoration: none;
 }
 nav ul li a:hover {
-	color: snow;
-}
-nav ul li a:visited {
-	color: #66ff66;
-}
-nav ul li a:active {
-	color: red;
+	background-color: red;
+	color: #000;
 }
 footer {
-	background-color: #19f;
+	background-color: #4EA6FF;
 	padding: 0.5em;
 	text-align: center;
 	color: black;
 }
 section {
+	margin-top: 60px;
 	background-color: red;
 	padding: 1px;
+
 }
+
+#home_image{
+	margin-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+#page2_section {
+	height: 1800px;
+	/*background-image: url("beat.jpg");
+	background-attachment: fixed;*/
+}
+#center {
+	width: 250px;
+	height: 250px;
+	background-color: black;
+	padding: 100px;
+	margin: 100px auto;
+}
+#cube {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+}
+
+
+
 
 
 /* section new page*/
 
 #c_header {
+
 	color: #fff;
 	background-color: #000;
 	text-align: center;
@@ -46,14 +100,20 @@ section {
 	height: 505px;
 }
 #c_nav ul {
-	
+	line-height: 30px;
 	padding-top: 40px;
 	padding-left: 20px;
 	margin: 0px;
 }
 #c_nav ul li{
+
 	display:block;
 }
+/*#c_nav ul li a {
+	background-color: #ccc;
+	padding: 5px;
+	padding-right: 20px;
+}*/
 #c_section {
 	background-color: #bbb;
 }
