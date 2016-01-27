@@ -1,15 +1,47 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<title>My Website</title>
-	</head>
-	<body>
-		<header>
-			Hello User!<br>
-			<a href="http://youtube.com">YouTube</a> <br>
-			<a href="new.html" target="_blank">next page</a>
-		</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content ="1" >	 -->
+	<link rel="stylesheet" href="styles/index_main.css">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="heading1"> THIS TITLE CHANGES WITH A CLICK </h1>
+		<div id='wrapper'>	
+		<ul id="nav">
+			<li><a href="new_page.html">NEXT PAGE</a></li>
+		</ul>
+
+
 		
+		<form method="GET" action="server.php">
+			USERNAME: <input type="text" name='name' size='20' maxlength='20' > <br>
+			PASSWORD: <input type="password" name='pass' size='20' maxlength='20' > <br>
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+			<br><hr><br><br>
+			
+
+
+		<div class='nameStorage'>
+
+			<p id='notify'>	</p>
+
+
+			WRITE YOUR NAME: <br>
+			<input type="text" id='yourName'><br /><br>
+			<button onclick="setName()">Store</button>
+			<button onClick='getName()'>Get</button>
+			<button onClick='removeName()'>Remove</button>
+			<button onClick='reset()'>Reset</button>
 		
-	</body>
+		</div>
+		<br><hr><br><br>
+
+</body>
+<script src='script/randomColor.js'></script>
+<script src="script/storage.js"></script>
+
 </html>
