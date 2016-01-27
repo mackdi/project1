@@ -11,13 +11,13 @@ nav ul li a  {
 	color: navy;
 }
 nav ul li a:hover {
-	color: red;
+	color: snow;
 }
 nav ul li a:visited {
 	color: #66ff66;
 }
 nav ul li a:active {
-	color: #ff3300;
+	color: red;
 }
 footer {
 	background-color: #19f;
