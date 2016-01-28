@@ -1,9 +1,12 @@
 function init(){
-
 	//CHANGE H1 COLOR INIT CODE
 	var h1tags = document.getElementsByTagName("h1");
 	h1tags[0].onclick = changeColor;
-
+	function changeColor() {
+	this.innerHTML = "Click Again";
+	var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+	this.style.color = randomColor; 
+	}
 
 	//GEOLOCATION CODE
 	if(navigator.geolocation){
@@ -27,18 +30,6 @@ function init(){
 				document.getElementById('notify').innerHTML = 'error: ' + err.code + "<br>" +' message: ' + err.message;
 				
 			}
-}
-
-
-
-
-function changeColor() {
-	this.innerHTML = "Click Again";
-	var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-	
-	this.style.color = randomColor; 
-
-
 }
 onload = init;
 

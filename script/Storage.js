@@ -1,3 +1,13 @@
+//vibrate
+	navigator.vibrate = navigator.vibrate ||
+                  navigator.webkitVibrate ||
+                  navigator.mozVibrate || 
+                  navigator.msVibrate;
+if (navigator.vibrate) {
+  alert('we can vibrate');
+} else {
+  alert('no vibration for you :-(');
+}
 var vOfName;
 function setName() {
 		

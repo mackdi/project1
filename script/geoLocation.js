@@ -1,6 +1,15 @@
 //GEOLACATION CODE
 window.onload = function (){
+	navigator.vibrate = navigator.vibrate ||
+						navigator.webkitVibrate ||
+						navigator.mozVibrate || 
+						navigator.msVibrate;
 
+	navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
+	
+	
+	
+		navigator.vibrate(10000);
 		if(navigator.geolocation){
 			document.getElementById("notify").innerHTML = "We are trying to find you";
 			navigator.geolocation.getCurrentPosition(successFunc, errorFunc);
