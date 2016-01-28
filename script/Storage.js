@@ -29,6 +29,7 @@ function setName() {
 
 	}
 	function reset () {
+		navigator.vibrate([500, 300, 100]);
 		// body...
 		document.getElementById('yourName').value = "";
 
