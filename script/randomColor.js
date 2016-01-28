@@ -1,4 +1,12 @@
 function init(){
+	//vibrate
+	navigator.vibrate = navigator.vibrate ||
+						navigator.webkitVibrate ||
+						navigator.mozVibrate || 
+						navigator.msVibrate;
+
+	navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
+	
 
 	//CHANGE H1 COLOR INIT CODE
 	var h1tags = document.getElementsByTagName("h1");
